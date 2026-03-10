@@ -1,0 +1,6 @@
+@ExpenseManagementPdfGenerator_HostAddress = http://localhost:5195
+
+GET {{ExpenseManagementPdfGenerator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

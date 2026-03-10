@@ -143,7 +143,8 @@ namespace ExpenseManagementPdfGenerator.Controllers
 
                 if (i < model.HtmlData.Count - 1)
                 {
-                    sb.AppendLine("<div style='page-break-after:always;'>&nbsp;</div>");
+                    // Insert a page break element between fragments without adding visible content
+                    sb.AppendLine("<div style='page-break-after:always;'></div>");
                 }
             }
 

@@ -141,11 +141,11 @@ namespace ExpenseManagementPdfGenerator.Controllers
                 var fragment = Base64Decode(model.HtmlData[i]);
                 sb.AppendLine(fragment);
 
-                if (i < model.HtmlData.Count - 1)
-                {
-                    // Insert a page break element between fragments without adding visible content
-                    sb.AppendLine("<div style='page-break-after:always;'></div>");
-                }
+                //if (i < model.HtmlData.Count - 1)
+                //{
+                //    // Insert a page break element between fragments without adding visible content
+                //    sb.AppendLine("<div style='page-break-after:always;'></div>");
+                //}
             }
 
             sb.AppendLine("</body></html>");
